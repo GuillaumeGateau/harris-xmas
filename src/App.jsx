@@ -3,6 +3,10 @@ import Snowfall from 'react-snowfall'
 import Card from './components/Card'
 import Snowman from './components/Snowman'
 import './App.css'
+import evaNYC from './assets/eva-nyc.jpg';
+import lizImage from './assets/liz.jpeg';
+import fionaImage from './assets/fiona.jpeg';
+import finnImage from './assets/finn.jpeg';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -11,13 +15,33 @@ function App() {
 
   const cards = [
     {
-      name: 'Eva',
-      passage: 'Your kindness and warmth always make every moment special. Thank you for being such an amazing presence in our lives.',
+      name: "Eva",
+      image: evaNYC,
+      message: "While you're all bundled up in the winter wonderland, I'm sending warm tropical wishes your way! Your love and support mean the world to me, and even though I'm enjoying palm trees and mai tais, my heart is with you this holiday season. Each of you brings something special to my life, and I'm grateful for the joy, laughter, and memories we share.",
+      signature: "Eva"
+    },
+    {
+      name: "Liz",
+      image: lizImage,
+      message: "Your friendship has been one of the greatest gifts in my life. Thank you for always being there with your wisdom, humor, and caring heart. Here's to many more years of shared laughter and memories.",
       signoff: 'With love, William'
     },
     {
-      name: 'Liz',
-      passage: 'Your strength and wisdom continue to inspire me. Thank you for always being there with your loving support.',
+      name: "Fiona",
+      image: fionaImage,
+      message: "My wonderful niece, your creativity and spirit light up every room you enter! I love watching you grow, learn, and share your unique perspective with the world. Your imagination and determination inspire me, and I can't wait to see all the amazing things you'll do. Keep being your incredible self!",
+      signoff: 'With love, William'
+    },
+    {
+      name: "Finn",
+      image: finnImage,
+      message: "To my amazing nephew, your curiosity and enthusiasm for life bring so much joy to everyone around you! I love seeing your eyes light up when you discover something new, and how you approach everything with such excitement and wonder. You make every moment together an adventure!",
+      signoff: 'With love, William'
+    },
+    {
+      name: "Ian",
+      image: 'https://placehold.co/400x600/dc2626/ffffff?text=Loading+Image',
+      message: "Your determination and spirit continue to inspire me. I'm so proud of all you've accomplished and the person you've become. Thank you for being such an amazing brother and friend. Looking forward to more adventures and conversations in the coming year!",
       signoff: 'With love, William'
     },
     {

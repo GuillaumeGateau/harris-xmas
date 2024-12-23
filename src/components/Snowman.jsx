@@ -1,34 +1,119 @@
-import React from 'react';
+import React from "react";
 
 const Snowman = () => (
   <svg
-    width="120"
-    height="160"
-    viewBox="0 0 120 160"
+    width="150"
+    height="225"
+    viewBox="0 0 200 300"
+    xmlns="http://www.w3.org/2000/svg"
     className="snowman"
   >
+    {/* Snow Base */}
+    <rect x="0" y="250" width="200" height="50" fill="white" />
+    <ellipse cx="100" cy="275" rx="120" ry="25" fill="white" />
+
+    {/* Bottom Snowball */}
+    <circle
+      cx="100"
+      cy="200"
+      r="50"
+      fill="url(#snowGradient)"
+      stroke="rgba(0, 0, 0, 0.1)"
+      strokeWidth="1"
+    />
+    {/* Middle Snowball */}
+    <circle
+      cx="100"
+      cy="120"
+      r="40"
+      fill="url(#snowGradient)"
+      stroke="rgba(0, 0, 0, 0.1)"
+      strokeWidth="1"
+    />
     {/* Head */}
-    <circle cx="60" cy="40" r="20" fill="white" />
-    {/* Body */}
-    <circle cx="60" cy="90" r="30" fill="white" />
-    {/* Base */}
-    <circle cx="60" cy="150" r="40" fill="white" />
+    <circle
+      cx="100"
+      cy="50"
+      r="30"
+      fill="url(#snowGradient)"
+      stroke="rgba(0, 0, 0, 0.1)"
+      strokeWidth="1"
+    />
+
+    {/* Gradient for Snowman */}
+    <defs>
+      <radialGradient id="snowGradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="white" />
+        <stop offset="100%" stopColor="lightblue" />
+      </radialGradient>
+    </defs>
+
+    {/* Top Hat */}
+    <rect x="75" y="0" width="50" height="15" fill="black" />
+    <rect x="65" y="15" width="70" height="10" fill="black" />
+    <rect x="65" y="15" width="70" height="3" fill="darkred" />
+
     {/* Eyes */}
-    <circle cx="52" cy="35" r="3" fill="black" />
-    <circle cx="68" cy="35" r="3" fill="black" />
+    <circle cx="92" cy="42" r="3" fill="black" />
+    <circle cx="108" cy="42" r="3" fill="black" />
+
     {/* Carrot Nose */}
-    <path d="M60 40 L60 45 L70 42.5 Z" fill="orange" />
+    <polygon points="100,50 100,55 120,52.5" fill="orange" />
+
     {/* Mouth */}
-    <path d="M50 48 Q60 55 70 48" fill="none" stroke="black" strokeWidth="2" />
-    {/* Arms */}
-    <line x1="25" y1="90" x2="95" y2="90" stroke="brown" strokeWidth="3" />
-    {/* Buttons */}
-    <circle cx="60" cy="75" r="3" fill="black" />
-    <circle cx="60" cy="90" r="3" fill="black" />
-    <circle cx="60" cy="105" r="3" fill="black" />
+    <path d="M90 60 Q100 70 110 60" fill="none" stroke="black" strokeWidth="2" />
+
     {/* Scarf */}
-    <path d="M40 60 Q60 70 80 60" fill="none" stroke="red" strokeWidth="5" />
-    <path d="M75 60 L85 75" stroke="red" strokeWidth="5" />
+    <path
+      d="M70 70 Q100 85 130 70"
+      fill="none"
+      stroke="darkred"
+      strokeWidth="8"
+    />
+    <path
+      d="M120 70 L120 100 Q115 102 110 98"
+      fill="darkred"
+    />
+
+    {/* Arms */}
+    <line
+      x1="55"
+      y1="120"
+      x2="20"
+      y2="80"
+      stroke="saddlebrown"
+      strokeWidth="5"
+    />
+    <line
+      x1="145"
+      y1="120"
+      x2="180"
+      y2="80"
+      stroke="saddlebrown"
+      strokeWidth="5"
+    />
+    {/* Branch Detail */}
+    <line
+      x1="20"
+      y1="80"
+      x2="30"
+      y2="75"
+      stroke="saddlebrown"
+      strokeWidth="2"
+    />
+    <line
+      x1="180"
+      y1="80"
+      x2="170"
+      y2="75"
+      stroke="saddlebrown"
+      strokeWidth="2"
+    />
+
+    {/* Buttons */}
+    <circle cx="100" cy="100" r="3" fill="black" />
+    <circle cx="100" cy="120" r="3" fill="black" />
+    <circle cx="100" cy="140" r="3" fill="black" />
   </svg>
 );
 

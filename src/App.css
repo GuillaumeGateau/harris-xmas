@@ -46,7 +46,7 @@ body {
     padding: 3rem;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
-    border-radius: 20px;
+    border-radius: 4px;
     box-shadow: 
         0 10px 20px rgba(0, 0, 0, 0.2),
         0 0 30px rgba(255, 255, 255, 0.1);
@@ -143,11 +143,11 @@ h1 {
   background: radial-gradient(
       circle,
       rgba(255, 255, 255, 0) 0%,      /* Fully transparent at the center */
-      rgba(255, 255, 255, 0.1) 30%,   /* Light white further out */
-      rgba(255, 255, 255, 0.3) 70%,   /* More visible toward the edges */
-      rgba(255, 255, 255, 0.7) 100%   /* Increased alpha for darker bottom */
+      rgba(255, 255, 255, 0.1) 0%,   /* Light white further out */
+      rgba(255, 255, 255, 0.3) 35%,   /* More visible toward the edges */
+      rgba(255, 255, 255, 0.4) 100%   /* Increased alpha for darker bottom */
   );
-  filter: blur(15px); /* Reduced blur for more focused shadow */
+  filter: blur(60px); /* Reduced blur for more focused shadow */
   pointer-events: none; /* Prevent interaction */
 }
 
