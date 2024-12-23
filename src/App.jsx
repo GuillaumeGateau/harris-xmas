@@ -7,6 +7,12 @@ import evaNYC from './assets/eva-nyc.jpg';
 import lizImage from './assets/liz.jpeg';
 import fionaImage from './assets/fiona.jpeg';
 import finnImage from './assets/finn.jpeg';
+import ianImage from './assets/ian.jpeg';
+import kathyImage from './assets/kathy.jpeg';
+import angelImage from './assets/angel.jpeg';
+import beccaImage from './assets/becca.jpeg';
+import benImage from './assets/ben.jpeg';
+import dadImage from './assets/dad.jpeg';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -18,7 +24,7 @@ function App() {
       name: "Eva",
       image: evaNYC,
       message: "While you're all bundled up in the winter wonderland, I'm sending warm tropical wishes your way! Your love and support mean the world to me, and even though I'm enjoying palm trees and mai tais, my heart is with you this holiday season. Each of you brings something special to my life, and I'm grateful for the joy, laughter, and memories we share.",
-      signature: "Eva"
+      signature: "With love, The Boy"
     },
     {
       name: "Liz",
@@ -29,43 +35,47 @@ function App() {
     {
       name: "Fiona",
       image: fionaImage,
-      message: "My wonderful niece, your creativity and spirit light up every room you enter! I love watching you grow, learn, and share your unique perspective with the world. Your imagination and determination inspire me, and I can't wait to see all the amazing things you'll do. Keep being your incredible self!",
-      signoff: 'With love, William'
+      message: "My wonderful niece, your creativity and spirit light up every room you enter! I love watching you grow, learn, and share your unique perspective with the world. Your imagination and determination inspire me, and I'm so grateful for all the amazing things you'll do. Keep being your incredible self!",
+      signoff: 'See you at the beach! William'
     },
     {
       name: "Finn",
       image: finnImage,
       message: "To my amazing nephew, your curiosity and enthusiasm for life bring so much joy to everyone around you! I love seeing your eyes light up when you discover something new, and how you approach everything with such excitement and wonder. You make every moment together an adventure!",
-      signoff: 'With love, William'
+      signoff: 'Your amazing uncle, William'
     },
     {
       name: "Ian",
-      image: 'https://placehold.co/400x600/dc2626/ffffff?text=Loading+Image',
+      image: ianImage,
       message: "Your determination and spirit continue to inspire me. I'm so proud of all you've accomplished and the person you've become. Thank you for being such an amazing brother and friend. Looking forward to more adventures and conversations in the coming year!",
+      signoff: 'Have a Merry Christmas, William'
+    },
+    {
+      name: "Kathy",
+      image: kathyImage,
+      message: "Dear Mom, your love, guidance, and unwavering support have shaped who I am today. Thank you for always being there with open arms and a loving heart. Your strength and wisdom continue to inspire me, and I'm so grateful for all the cherished memories we share. Sending you the warmest holiday wishes with all my love!"
+    },
+    {
+      name: "Angel",
+      image: angelImage,
+      message: "Your kindness and grace touch everyone around you. Thank you for being such a wonderful presence in our lives. Your caring heart and gentle spirit make the world a better place, and we're so blessed to have you in our family.",
       signoff: 'With love, William'
     },
     {
-      name: 'Kathy',
-      passage: 'Your joy and enthusiasm for life is contagious. Thank you for bringing so much happiness to our family.',
-      signoff: 'With love, William'
+      name: "Becca",
+      image: beccaImage,
+      message: "Your vibrant spirit and infectious laughter bring so much joy to our family. I love how you embrace life with such enthusiasm and care so deeply for those around you. Thank you for being such an amazing sister-in-law and friend. Here's to more shared adventures and wonderful memories in the year ahead!",
+      signoff: "Merry Christmas! William"
     },
     {
-      name: 'Angel',
-      passage: 'Your caring heart and gentle spirit make the world a better place. Thank you for being such a wonderful part of our lives.',
-      signoff: 'With love, William'
-    },
-    {
-      name: 'Becca',
-      passage: 'Your creativity and passion light up every room. Thank you for sharing your beautiful energy with us.',
-      signoff: 'With love, William'
-    },
-    {
-      name: 'Ben',
-      passage: 'Your humor and wit always bring joy to our gatherings. Thank you for being such a great presence in our family.',
-      signoff: 'With love, William'
+      name: "Ben",
+      image: benImage,
+      message: "Your strength, resilience, and dedication to family inspire us all. Thank you for being such an incredible brother-in-law and for bringing so much warmth and wisdom to our lives. I'm grateful for our conversations and the way you always make time for what truly matters. Looking forward to more shared moments and memories in the year ahead!",
+      signoff: "Happy Holidays! William"
     },
     {
       name: 'Dad',
+      image: dadImage,
       passage: 'Your guidance and love have shaped who I am today. Thank you for being the best father anyone could ask for.',
       signoff: 'With love, William'
     }

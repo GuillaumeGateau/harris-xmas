@@ -1,0 +1,15 @@
+{
+  "short_name": "Keck Christmas",
+  "name": "🎄 A Keck Christmas 🎅",
+  "icons": [
+    {
+      "src": "christmas-tree.svg",
+      "sizes": "24x24",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#dc2626",
+  "background_color": "#ffffff"
+}

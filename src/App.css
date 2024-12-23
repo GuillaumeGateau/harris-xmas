@@ -37,14 +37,14 @@ body {
     padding: 2rem 1rem 1rem;
     position: relative;
     z-index: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .header-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(8px);
     border-radius: 4px;
     box-shadow: 
@@ -62,7 +62,7 @@ h1 {
         2px 2px 4px rgba(0, 0, 0, 0.1),
         0 0 20px rgba(255, 255, 255, 0.5);
     position: relative;
-    font-weight: 700;
+    font-weight: 1000;
     text-align: center;
     padding-right: 1em;
 }
@@ -82,9 +82,11 @@ h1 {
 }
 
 .intro-message {
-    color: #2c3e50;
+    color: white;
     line-height: 1.8;
-    font-size: 1.2em;
+    font-weight: 1000 !important;
+    font-style: italic !important;
+    font-size: 1.5em;
     margin: 0 auto;
     max-width: 700px;
     font-family: 'Merriweather', serif;
@@ -101,7 +103,7 @@ h1 {
     padding: 0 1rem;
     position: relative;
     z-index: 1;
-    margin-bottom: 250px;
+    margin-bottom: 400px;
 }
 
 /* Footer Space and Snow Effects */
@@ -110,7 +112,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 300px;
+    height: 400px;
     z-index: 2;
     pointer-events: none;
     perspective: 1000px;
@@ -265,7 +267,7 @@ h1 {
     }
 
     .footer-space {
-        height: 150px;
+        height: 300px;
     }
 
     .snowman-container {
