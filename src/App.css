@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+#root {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(26, 71, 42, 0.95), rgba(26, 71, 42, 0.95)),
+        url('https://placehold.co/1920x1080/1a472a/1a472a/png?text=Christmas+Background') center/cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Holiday Characters */
+.holiday-character {
+    position: fixed;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.header-container {
+    padding: 2rem 1rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #c41e3a;
+    font-size: 4em;
+    margin-bottom: 1.5rem;
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.2;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(255, 255, 255, 0.5);
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 1em;
+}
+
+.christmas-tree {
+    position: absolute;
+    top: 30%;
+    right: -0.2em;
+    transform: translateY(-50%);
+    font-size: 1.6em;
+    animation: treeWiggle 2s ease-in-out infinite;
+}
+
+@keyframes treeWiggle {
+    0%, 100% { transform: translateY(-50%) rotate(-5deg); }
+    50% { transform: translateY(-50%) rotate(5deg); }
+}
+
+.intro-message {
+    color: #2c3e50;
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 700px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 250px;
+}
+
+/* Footer Space and Snow Effects */
+.footer-space {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    z-index: 2;
+    pointer-events: none;
+    perspective: 1000px;
+}
+
+.snowman-container {
+  position: absolute;
+  bottom: 25px;
+  left: 40%;
+  transform: translateX(-50%) scale(1.5);
+  z-index: 4;
+  overflow: visible; /* Ensure the shadow isn't clipped */
+}
+
+.snowman {
+  position: relative;
+  z-index: 1; /* Ensure the snowman is above the shadow */
+  clip-path: inset(0 0 8px 0); /* Keep this for fine-tuned bottom clipping */
+}
+
+.snowman-container::before {
+  content: '';
+  position: absolute;
+  z-index: 0; /* Ensure it's behind the snowman */
+  top: 50%; /* Start shadow lower to align with the bottom snowball */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%; /* Adjust width to make the shadow grow outward */
+  height: 250%; /* Extend height to cover the bottom area */
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 0%,      /* Fully transparent at the center */
+      rgba(255, 255, 255, 0.1) 30%,   /* Light white further out */
+      rgba(255, 255, 255, 0.3) 70%,   /* More visible toward the edges */
+      rgba(255, 255, 255, 0.7) 100%   /* Increased alpha for darker bottom */
+  );
+  filter: blur(15px); /* Reduced blur for more focused shadow */
+  pointer-events: none; /* Prevent interaction */
+}
+
+
+
+.snow-ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.snow-surface {
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 100px;
+    background: white;
+    border-radius: 100% 100% 0 0;
+    opacity: 0.9;
+    box-shadow: 
+        0 -10px 30px rgba(255, 255, 255, 0.3),
+        inset 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.snow-hill {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 
+        0 -5px 20px rgba(255, 255, 255, 0.4),
+        inset 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.snow-hill-1 {
+    width: 600px;
+    height: 200px;
+    bottom: -100px;
+    left: 15%;
+    opacity: 0.85;
+}
+
+.snow-hill-2 {
+    width: 500px;
+    height: 150px;
+    bottom: -75px;
+    right: 10%;
+    opacity: 0.75;
+}
+
+.snow-hill-3 {
+    width: 700px;
+    height: 180px;
+    bottom: -90px;
+    left: 40%;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 3em;
+        padding-right: 0.8em;
+    }
+
+    .christmas-tree {
+        font-size: 1.3em;
+        right: -0.3em;
+    }
+
+    .intro-message {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .cards-container {
+        padding: 0 0.5rem;
+        margin-bottom: 200px;
+    }
+
+    .footer-space {
+        height: 200px;
+    }
+
+    .snowman-container {
+        transform: translateX(-50%) scale(1.2);
+        left: 35%;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        padding-right: 0.6em;
+    }
+
+    .christmas-tree {
+        font-size: 1em;
+    }
+
+    .intro-message {
+        font-size: 0.9em;
+    }
+
+    .footer-space {
+        height: 150px;
+    }
+
+    .snowman-container {
+        transform: translateX(-50%) scale(0.8);
+        left: 30%;
+        bottom: 8px;
+    }
+}
