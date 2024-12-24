@@ -87,7 +87,7 @@
 }
 
 .card-message {
-  font-size: 1.8rem; /* Fixed font size for the message */
+  font-size: 1.3rem; /* Fixed font size for the message */
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -169,7 +169,7 @@
   }
 
   .card-message {
-    font-size: 1.2rem; /* Further adjustments for very small screens */
+    font-size: 1.3rem; /* Further adjustments for very small screens */
     line-height: 1.4;
   }
 }
