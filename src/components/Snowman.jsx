@@ -9,8 +9,7 @@ const Snowman = () => (
     className="snowman"
   >
     {/* Snow Base */}
-    <rect x="0" y="250" width="200" height="50" fill="white" />
-    <ellipse cx="100" cy="275" rx="120" ry="25" fill="white" />
+    <ellipse cx="100" cy="290" rx="90" ry="30" fill="rgba(255, 255, 255, 0.8)" />
 
     {/* Bottom Snowball */}
     <circle
@@ -21,6 +20,7 @@ const Snowman = () => (
       stroke="rgba(0, 0, 0, 0.1)"
       strokeWidth="1"
     />
+
     {/* Middle Snowball */}
     <circle
       cx="100"
@@ -30,6 +30,7 @@ const Snowman = () => (
       stroke="rgba(0, 0, 0, 0.1)"
       strokeWidth="1"
     />
+
     {/* Head */}
     <circle
       cx="100"
@@ -70,10 +71,7 @@ const Snowman = () => (
       stroke="darkred"
       strokeWidth="8"
     />
-    <path
-      d="M120 70 L120 100 Q115 102 110 98"
-      fill="darkred"
-    />
+    <path d="M120 70 L120 100 Q115 102 110 98" fill="darkred" />
 
     {/* Arms */}
     <line
@@ -91,23 +89,6 @@ const Snowman = () => (
       y2="80"
       stroke="saddlebrown"
       strokeWidth="5"
-    />
-    {/* Branch Detail */}
-    <line
-      x1="20"
-      y1="80"
-      x2="30"
-      y2="75"
-      stroke="saddlebrown"
-      strokeWidth="2"
-    />
-    <line
-      x1="180"
-      y1="80"
-      x2="170"
-      y2="75"
-      stroke="saddlebrown"
-      strokeWidth="2"
     />
 
     {/* Buttons */}
